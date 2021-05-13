@@ -43,8 +43,9 @@ def generate_password():
     choices = [u,l,s,n]
     random.shuffle(choices)
     password = create(choices)
-    print(password)
+    return password
 
 
 
-generate_password()
+p = generate_password()
+print(p)
